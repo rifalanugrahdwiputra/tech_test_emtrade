@@ -56,9 +56,6 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         future: initPlatformState(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            // if (snapshot.data!) {
-            //   return const JailbreakWidget();
-            // } else {
             return MultiBlocProvider(
               providers: [
                 BlocProvider<MainCubit>(create: (context) {
@@ -86,7 +83,6 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                 title: 'Emtrade',
               ),
             );
-            // }
           }
           return const SizedBox.shrink();
         });
