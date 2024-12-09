@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:template_mobile_apps/common/helper/string_extension.dart';
-import 'package:template_mobile_apps/design_system/commons/colors/colors.dart';
-import 'package:template_mobile_apps/design_system/commons/typhography/foundation/text_styles.dart';
+import 'package:emtrade_tech_test/common/helper/string_extension.dart';
+import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/design_system/commons/typhography/foundation/text_styles.dart';
 
-class FAForms extends StatefulWidget {
+class BAForms extends StatefulWidget {
   final TextFormType textFormType;
   final AutovalidateMode? autovalidateMode;
   final TextInputType textInputType;
@@ -32,7 +32,7 @@ class FAForms extends StatefulWidget {
   final VoidCallback? onFinishEditing; // New parameter
   final String? errorText;
 
-  const FAForms.phone({
+  const BAForms.phone({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -61,7 +61,7 @@ class FAForms extends StatefulWidget {
         minLines = 1,
         textInputType = TextInputType.phone;
 
-  const FAForms.email({
+  const BAForms.email({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -90,7 +90,7 @@ class FAForms extends StatefulWidget {
         minLines = 1,
         textInputType = TextInputType.emailAddress;
 
-  const FAForms.password({
+  const BAForms.password({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -119,7 +119,7 @@ class FAForms extends StatefulWidget {
         obscureText = true,
         textInputType = TextInputType.visiblePassword;
 
-  const FAForms.text({
+  const BAForms.text({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -148,7 +148,7 @@ class FAForms extends StatefulWidget {
         minLines = 1,
         textInputType = TextInputType.text;
 
-  const FAForms.textArea({
+  const BAForms.textArea({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -177,7 +177,7 @@ class FAForms extends StatefulWidget {
         obscureText = false,
         textInputType = TextInputType.multiline;
 
-  const FAForms.number({
+  const BAForms.number({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -206,7 +206,7 @@ class FAForms extends StatefulWidget {
         minLines = 1,
         textInputType = TextInputType.number;
 
-  const FAForms.currency({
+  const BAForms.currency({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -235,7 +235,7 @@ class FAForms extends StatefulWidget {
         minLines = 1,
         textInputType = TextInputType.number;
 
-  const FAForms.alphabetic({
+  const BAForms.alphabetic({
     super.key,
     this.controller,
     this.autovalidateMode,
@@ -266,10 +266,10 @@ class FAForms extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _FAFormsState createState() => _FAFormsState();
+  _BAFormsState createState() => _BAFormsState();
 }
 
-class _FAFormsState extends State<FAForms> {
+class _BAFormsState extends State<BAForms> {
   @override
   void initState() {
     super.initState();

@@ -1,23 +1,23 @@
-import 'package:template_mobile_apps/presentation/main/cubit/main_cubit.dart';
+import 'package:emtrade_tech_test/presentation/main/cubit/main_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_jailbreak_detection/flutter_jailbreak_detection.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:template_mobile_apps/common/env/env.dart';
-import 'package:template_mobile_apps/common/injection/injection.dart';
-import 'package:template_mobile_apps/globals.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/bloc/error_cubit.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/bloc/error_stream.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/error_enum.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/page/error_screen.dart';
-import 'package:template_mobile_apps/presentation/navigation/fa_router.dart';
+import 'package:emtrade_tech_test/common/env/env.dart';
+import 'package:emtrade_tech_test/common/injection/injection.dart';
+import 'package:emtrade_tech_test/globals.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/bloc/error_cubit.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/bloc/error_stream.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/error_enum.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/page/error_screen.dart';
+import 'package:emtrade_tech_test/presentation/navigation/ba_router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await FAEnvironment().initEnv();
-  await FAEnvironment().getCurrentEnv();
+  await BAEnvironment().initEnv();
+  await BAEnvironment().getCurrentEnv();
 
   configureInjection();
 
@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                 routeInformationParser: paGlobalRouter.routeInformationParser,
                 routeInformationProvider:
                     paGlobalRouter.routeInformationProvider,
-                title: 'Pilkada',
+                title: 'Emtrade',
               ),
             );
             // }

@@ -2,11 +2,11 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:template_mobile_apps/data/constants/fa_hive_constants.dart';
+import 'package:emtrade_tech_test/data/constants/ba_hive_constants.dart';
 
 class SecureHive {
   static Future<Uint8List> getKey() async {
-    final encryptionBox = await Hive.openBox(FAHiveBoxName.encryptionBox);
+    final encryptionBox = await Hive.openBox(BAHiveBoxName.encryptionBox);
     String? encryptionKey = encryptionBox.get("encryption_key");
     if (encryptionKey == null) {
       final newKey = Hive.generateSecureKey();

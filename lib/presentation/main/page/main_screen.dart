@@ -1,11 +1,8 @@
-import 'package:template_mobile_apps/common/injection/injection.dart';
-import 'package:template_mobile_apps/design_system/commons/colors/colors.dart';
-import 'package:template_mobile_apps/design_system/main/organism/bottom_nav_bar_organism.dart';
-import 'package:template_mobile_apps/presentation/cart/page/cart_screen.dart';
-import 'package:template_mobile_apps/presentation/clasification/page/clasification_screen.dart';
-import 'package:template_mobile_apps/presentation/main/cubit/main_cubit.dart';
-import 'package:template_mobile_apps/presentation/product/page/product_screen.dart';
-import 'package:template_mobile_apps/presentation/profile/page/profile_screen.dart';
+import 'package:emtrade_tech_test/common/injection/injection.dart';
+import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/design_system/main/organism/bottom_nav_bar_organism.dart';
+import 'package:emtrade_tech_test/presentation/article_content/page/article_content_screen.dart';
+import 'package:emtrade_tech_test/presentation/main/cubit/main_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -45,10 +42,10 @@ class _MainPageState extends State<MainPage> with WidgetsBindingObserver {
 
   List<Widget> _buildRoutes() {
     return [
-      const ProductScreen(),
-      const ClasificationScreen(),
-      const CartScreen(),
-      const ProfileScreen(),
+      const ArticleContentPage(),
+      const ArticleContentPage(),
+      const ArticleContentPage(),
+      const ArticleContentPage(),
     ];
   }
 

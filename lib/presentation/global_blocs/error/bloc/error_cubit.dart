@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/error_enum.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/error_enum.dart';
 
 part 'error_state.dart';
 

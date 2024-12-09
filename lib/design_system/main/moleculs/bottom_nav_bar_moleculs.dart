@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:template_mobile_apps/design_system/commons/colors/colors.dart';
-import 'package:template_mobile_apps/gen/assets.gen.dart';
+import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/gen/assets.gen.dart';
 
 class BottomNavigationBarMoleculs extends StatelessWidget {
   final int currentIndex;

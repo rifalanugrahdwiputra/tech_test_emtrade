@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:template_mobile_apps/common/extensions/on_build_context.dart';
-import 'package:template_mobile_apps/design_system/commons/colors/colors.dart';
-import 'package:template_mobile_apps/design_system/commons/widget/text/text.dart';
+import 'package:emtrade_tech_test/common/extensions/on_build_context.dart';
+import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/design_system/commons/widget/text/text.dart';
 
-class FAButton extends StatelessWidget {
+class BAButton extends StatelessWidget {
   final String text;
   final Function()? onPressed;
   final double height;
@@ -16,7 +16,7 @@ class FAButton extends StatelessWidget {
   final FocusNode? focusNode;
   final ButtonType buttonType;
 
-  const FAButton.outlined({
+  const BAButton.outlined({
     super.key,
     required this.text,
     this.isExpanded = true,
@@ -30,7 +30,7 @@ class FAButton extends StatelessWidget {
     this.focusNode,
   }) : buttonType = ButtonType.outlined;
 
-  const FAButton.filled({
+  const BAButton.filled({
     super.key,
     required this.text,
     this.isExpanded = true,
@@ -92,7 +92,7 @@ class FAButton extends StatelessWidget {
       //     );
       //   }),
       // ),
-      label: FAText.titleMediumSemiBold(
+      label: BAText.titleMediumSemiBold(
           text: text, textColor: textColor ?? AppColors.white),
       icon: icon != null
           ? SizedBox(
@@ -104,7 +104,7 @@ class FAButton extends StatelessWidget {
   Widget getOutlineButton() {
     return OutlinedButton.icon(
       onPressed: onPressed,
-      label: FAText.titleMediumSemiBold(
+      label: BAText.titleMediumSemiBold(
           text: text, textColor: textColor ?? AppColors.white),
       style: OutlinedButton.styleFrom(
         side: BorderSide(

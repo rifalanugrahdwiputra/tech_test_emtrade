@@ -7,28 +7,27 @@ part 'dev_env.dart';
 
 part 'env.g.dart';
 
-enum FAEnvironmentType { layout, dev }
+enum BAEnvironmentType { layout, dev }
 
-class FAEnvironment {
-  late final String _classificationUrl;
-  late final String _productUrl;
+class BAEnvironment {
+  late final String _baseUrl;
 
-  static final FAEnvironment _singleton = FAEnvironment._internal();
+  static final BAEnvironment _singleton = BAEnvironment._internal();
 
-  factory FAEnvironment() => _singleton;
+  factory BAEnvironment() => _singleton;
 
-  FAEnvironment._internal();
+  BAEnvironment._internal();
 
-  Future<FAEnvironmentType> getCurrentEnv() async {
+  Future<BAEnvironmentType> getCurrentEnv() async {
     final packageInfo = await PackageInfo.fromPlatform();
     switch (packageInfo.packageName) {
-      case "com.ebdesk.pilkada.layout":
-        return FAEnvironmentType.layout;
-      case "com.ebdesk.pilkada.dev":
-        return FAEnvironmentType.dev;
+      case "com.emtrade.layout":
+        return BAEnvironmentType.layout;
+      case "com.emtrade.dev":
+        return BAEnvironmentType.dev;
 
       default:
-        return FAEnvironmentType.dev;
+        return BAEnvironmentType.dev;
     }
   }
 
@@ -40,10 +39,9 @@ class FAEnvironment {
 
   Future<void> _getBasedUrlBasedOnEnv() async {
     final currentEnv = await getCurrentEnv();
-    if (currentEnv == FAEnvironmentType.dev ||
-        currentEnv == FAEnvironmentType.layout) {
-      _classificationUrl = FADevEnv.classificationUrl;
-      _productUrl = FADevEnv.productUrl;
+    if (currentEnv == BAEnvironmentType.dev ||
+        currentEnv == BAEnvironmentType.layout) {
+      _baseUrl = BADevEnv.baseUrl;
     }
   }
 
@@ -51,7 +49,5 @@ class FAEnvironment {
 
   static const int connectionTimeout = 20000;
 
-  String get classificationUrl => _classificationUrl;
-
-  String get productUrl => _productUrl;
+  String get baseUrl => _baseUrl;
 }

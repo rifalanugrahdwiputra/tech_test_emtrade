@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:template_mobile_apps/design_system/commons/colors/colors.dart';
-import 'package:template_mobile_apps/design_system/commons/widget/text/text.dart';
+import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/design_system/commons/widget/text/text.dart';
 
 class ContentErrorMoleculs extends StatelessWidget {
   final String errorImage;
@@ -25,13 +25,13 @@ class ContentErrorMoleculs extends StatelessWidget {
           height: 200,
         ),
         const SizedBox(height: 23),
-        FAText.headlineSmallBold(
+        BAText.headlineSmallBold(
           text: errorMessage,
           textColor: AppColors.primary,
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 16),
-        FAText.bodyMediumRegular(
+        BAText.bodyMediumRegular(
           text: errorDescription,
           textColor: AppColors.blackLoader,
           textAlign: TextAlign.center,

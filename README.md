@@ -1,4 +1,4 @@
-# template_mobile_apps
+# emtrade_tech_test
 
 A new Flutter project.
 

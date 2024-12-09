@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:template_mobile_apps/design_system/commons/colors/colors.dart';
-import 'package:template_mobile_apps/design_system/commons/widget/button/button.dart';
-import 'package:template_mobile_apps/design_system/commons/widget/text/text.dart';
+import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/design_system/commons/widget/button/button.dart';
+import 'package:emtrade_tech_test/design_system/commons/widget/text/text.dart';
 
 class JailbreakWidget extends StatelessWidget {
   const JailbreakWidget({super.key});
@@ -15,18 +15,18 @@ class JailbreakWidget extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const FAText.headlineSmallBold(
+              const BAText.headlineSmallBold(
                 text: "Jaibreak Detected",
                 textColor: AppColors.primary,
               ),
               const SizedBox(height: 10),
-              const FAText.bodyMediumBold(
+              const BAText.bodyMediumBold(
                 text: "Jandole is not supported on jaibroken devices",
                 textColor: AppColors.primary,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-                child: FAButton.filled(
+                child: BAButton.filled(
                   onPressed: () {
                     SystemNavigator.pop();
                   },

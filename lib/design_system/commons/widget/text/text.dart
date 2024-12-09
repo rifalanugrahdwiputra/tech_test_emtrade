@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:template_mobile_apps/design_system/commons/typhography/foundation/text_styles.dart';
+import 'package:emtrade_tech_test/design_system/commons/typhography/foundation/text_styles.dart';
 
 /// A Widget to handle the Text Rendering on Jandole Apps
 ///
@@ -15,7 +15,7 @@ import 'package:template_mobile_apps/design_system/commons/typhography/foundatio
 /// [FontWeight.w500] based on the design about 'fontWeight.w500, the proper weight is 'Medium'.
 /// [FontWeight.w400] based on the design about 'fontWeight.w400, the proper weight is 'Regular'.
 ///
-class FAText extends StatelessWidget {
+class BAText extends StatelessWidget {
   final String text;
   final TextStyle textStyle;
   final TextAlign? textAlign;
@@ -23,7 +23,7 @@ class FAText extends StatelessWidget {
   final int? maxLines;
   final Color textColor;
 
-  const FAText.displayLargeSemiBold({
+  const BAText.displayLargeSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.displayLargeSemiBold,
@@ -33,7 +33,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineLargeBold({
+  const BAText.headlineLargeBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineLargeBold,
@@ -43,7 +43,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineLargeSemiBold({
+  const BAText.headlineLargeSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineLargeSemiBold,
@@ -53,7 +53,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineLargeMedium({
+  const BAText.headlineLargeMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineLargeMedium,
@@ -63,7 +63,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineLargeRegular({
+  const BAText.headlineLargeRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineLargeRegular,
@@ -73,7 +73,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineSmallBold({
+  const BAText.headlineSmallBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineSmallBold,
@@ -83,7 +83,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineSmallSemiBold({
+  const BAText.headlineSmallSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineSmallSemiBold,
@@ -93,7 +93,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineSmallMedium({
+  const BAText.headlineSmallMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineSmallMedium,
@@ -103,7 +103,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineSmallRegular({
+  const BAText.headlineSmallRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineSmallRegular,
@@ -113,7 +113,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineExtraSmallBold({
+  const BAText.headlineExtraSmallBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineExtraSmallBold,
@@ -123,7 +123,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineExtraSmallSemiBold({
+  const BAText.headlineExtraSmallSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineExtraSmallSemiBold,
@@ -133,7 +133,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineExtraSmallMedium({
+  const BAText.headlineExtraSmallMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineExtraSmallMedium,
@@ -143,7 +143,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineExtraSmallRegular({
+  const BAText.headlineExtraSmallRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineExtraSmallRegular,
@@ -153,7 +153,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleLargeBold({
+  const BAText.titleLargeBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleLargeBold,
@@ -163,7 +163,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleLargeSemiBold({
+  const BAText.titleLargeSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleLargeSemiBold,
@@ -173,7 +173,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleLargeMedium({
+  const BAText.titleLargeMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleLargeMedium,
@@ -183,7 +183,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleLargeRegular({
+  const BAText.titleLargeRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleLargeRegular,
@@ -193,7 +193,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleMediumBold({
+  const BAText.titleMediumBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleMediumBold,
@@ -203,7 +203,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleMediumSemiBold({
+  const BAText.titleMediumSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleMediumSemiBold,
@@ -213,7 +213,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleMediumMedium({
+  const BAText.titleMediumMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleMediumMedium,
@@ -223,7 +223,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.titleMediumRegular({
+  const BAText.titleMediumRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.titleMediumRegular,
@@ -233,7 +233,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineMediumBold({
+  const BAText.headlineMediumBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineMediumBold,
@@ -243,7 +243,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineMediumSemiBold({
+  const BAText.headlineMediumSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineMediumSemiBold,
@@ -253,7 +253,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineMediumRegular({
+  const BAText.headlineMediumRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineMediumRegular,
@@ -263,7 +263,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.headlineMediumMedium({
+  const BAText.headlineMediumMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.headlineMediumMedium,
@@ -273,7 +273,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyMediumBold({
+  const BAText.bodyMediumBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyMediumBold,
@@ -283,7 +283,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyMediumSemiBold({
+  const BAText.bodyMediumSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyMediumSemiBold,
@@ -293,7 +293,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyMediumRegular({
+  const BAText.bodyMediumRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyMediumRegular,
@@ -303,7 +303,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyMediumMedium({
+  const BAText.bodyMediumMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyMediumMedium,
@@ -313,7 +313,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodySmallBold({
+  const BAText.bodySmallBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodySmallBold,
@@ -323,7 +323,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodySmallSemiBold({
+  const BAText.bodySmallSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodySmallSemiBold,
@@ -333,7 +333,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodySmallMedium({
+  const BAText.bodySmallMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodySmallMedium,
@@ -343,7 +343,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodySmallRegular({
+  const BAText.bodySmallRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodySmallRegular,
@@ -353,7 +353,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyExtraSmallBold({
+  const BAText.bodyExtraSmallBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyExtraSmallBold,
@@ -363,7 +363,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyExtraSmallSemiBold({
+  const BAText.bodyExtraSmallSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyExtraSmallSemiBold,
@@ -373,7 +373,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyExtraSmallMedium({
+  const BAText.bodyExtraSmallMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyExtraSmallMedium,
@@ -383,7 +383,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.bodyExtraSmallRegular({
+  const BAText.bodyExtraSmallRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.bodyExtraSmallRegular,
@@ -393,7 +393,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.captionBold({
+  const BAText.captionBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.captionBold,
@@ -403,7 +403,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.captionSemiBold({
+  const BAText.captionSemiBold({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.captionSemiBold,
@@ -413,7 +413,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.captionMedium({
+  const BAText.captionMedium({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.captionMedium,
@@ -423,7 +423,7 @@ class FAText extends StatelessWidget {
     required this.textColor,
   });
 
-  const FAText.captionRegular({
+  const BAText.captionRegular({
     super.key,
     required this.text,
     this.textStyle = AppTextStyles.captionRegular,

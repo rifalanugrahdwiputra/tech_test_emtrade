@@ -1,4 +1,4 @@
-import 'package:template_mobile_apps/common/helper/regex_helper.dart';
+import 'package:emtrade_tech_test/common/helper/regex_helper.dart';
 
 extension StringExtension on String {
   String toCapitalized() =>

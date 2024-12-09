@@ -1,4 +1,4 @@
-import 'package:template_mobile_apps/design_system/main/moleculs/bottom_nav_bar_moleculs.dart';
+import 'package:emtrade_tech_test/design_system/main/moleculs/bottom_nav_bar_moleculs.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarOrganism extends StatelessWidget {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:template_mobile_apps/design_system/error/moleculs/content_button_moleculs.dart';
-import 'package:template_mobile_apps/design_system/error/moleculs/content_error_moleculs.dart';
+import 'package:emtrade_tech_test/design_system/error/moleculs/content_button_moleculs.dart';
+import 'package:emtrade_tech_test/design_system/error/moleculs/content_error_moleculs.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:template_mobile_apps/gen/assets.gen.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/bloc/error_cubit.dart';
-import 'package:template_mobile_apps/presentation/global_blocs/error/error_enum.dart';
+import 'package:emtrade_tech_test/gen/assets.gen.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/bloc/error_cubit.dart';
+import 'package:emtrade_tech_test/presentation/global_blocs/error/error_enum.dart';
 
 class GlobalErrorScreen extends StatelessWidget {
   final ErrorTypeEnum errorType;
