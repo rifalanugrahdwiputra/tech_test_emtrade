@@ -317,7 +317,6 @@ class _BAFormsState extends State<BAForms> {
       onSaved: widget.onSaved,
       textAlign: widget.textAlign,
       cursorColor: AppColors.darkPrimary,
-      
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0,),
         filled: widget.filled,

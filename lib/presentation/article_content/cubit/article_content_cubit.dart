@@ -14,7 +14,7 @@ class ArticleContentCubit extends Cubit<ArticleContentState> {
   Timer? _debounce;
   
   int currentPage = 1;
-  int currentSize = 10;
+  int currentSize = 30;
   bool isLoadingMore = false;
   
    ArticleContentCubit(this._articleContentUsecase)
