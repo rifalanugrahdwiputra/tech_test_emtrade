@@ -1,4 +1,4 @@
-# Tech Skill Emtrade
+# Tech Test Emtrade
 
 This project is a Flutter application built for managing tech skill-based tasks. Below are the steps to set up and run the app locally.
 
