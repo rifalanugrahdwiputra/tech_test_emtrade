@@ -19,66 +19,55 @@ class BottomNavigationBarMoleculs extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: currentIndex,
-      useLegacyColorScheme: true,
+      useLegacyColorScheme: false,
       backgroundColor: AppColors.white,
       onTap: onTap,
       type: BottomNavigationBarType.fixed,
       items: [
-        BottomNavigationBarItem(
-          label: "",
-          icon: SvgPicture.asset(
-            Assets.icons.icHome,
-            height: 32,
-            color: AppColors.grey,
-          ),
-          activeIcon: SvgPicture.asset(
-            Assets.icons.icHome,
-            height: 32,
-            color: AppColors.primary,
-          ),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: SvgPicture.asset(
-            Assets.icons.icSelectImage,
-            height: 32,
-            color: AppColors.grey,
-          ),
-          activeIcon: SvgPicture.asset(
-            Assets.icons.icSelectImage,
-            height: 32,
-            color: AppColors.primary,
-          ),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: SvgPicture.asset(
-            Assets.icons.icCart,
-            height: 32,
-            color: AppColors.grey,
-          ),
-          activeIcon: SvgPicture.asset(
-            Assets.icons.icCart,
-            height: 32,
-            color: AppColors.primary,
-          ),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: SvgPicture.asset(
-            Assets.icons.icProfile,
-            height: 28,
-            color: AppColors.grey,
-          ),
-          activeIcon: SvgPicture.asset(
-            Assets.icons.icProfile,
-            height: 28,
-            color: AppColors.primary,
-          ),
-        ),
+        _buildBottomNavItem(Assets.icons.icHome, "Home"),
+        _buildBottomNavItem(Assets.icons.icStockPick, "Stock Pick"),
+        _buildBottomNavItem(Assets.icons.icEducation, "Education"),
+        _buildBottomNavItem(Assets.icons.icAnalysis, "Analysis"),
+        _buildBottomNavItem(Assets.icons.icAcademy, "Academy"),
       ],
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
+      unselectedLabelStyle: _unselectedLabelStyle,
+      selectedLabelStyle: _selectedLabelStyle,
     );
   }
+
+  BottomNavigationBarItem _buildBottomNavItem(String iconPath, String label) {
+    return BottomNavigationBarItem(
+      label: label,
+      icon: SvgPicture.asset(
+        iconPath,
+        height: 24,
+        color: AppColors.neutralLabel,
+      ),
+      activeIcon: SvgPicture.asset(
+        iconPath,
+        height: 24,
+        color: AppColors.secondaryOrange,
+      ),
+    );
+  }
+
+  TextStyle get _unselectedLabelStyle => const TextStyle(
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+        fontSize: 12,
+        decoration: TextDecoration.none,
+        letterSpacing: 0.25,
+        color: AppColors.neutralLabel,
+      );
+
+  TextStyle get _selectedLabelStyle => const TextStyle(
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w400,
+        fontStyle: FontStyle.normal,
+        fontSize: 12,
+        decoration: TextDecoration.none,
+        letterSpacing: 0.25,
+        color: AppColors.secondaryOrange,
+      );
 }

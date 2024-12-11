@@ -1,6 +1,6 @@
+import 'package:emtrade_tech_test/presentation/main/page/main_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:emtrade_tech_test/globals.dart';
-import 'package:emtrade_tech_test/presentation/article_content/page/article_content_screen.dart';
 import 'package:emtrade_tech_test/presentation/navigation/ba_routes.dart';
 
 final GoRouter paGlobalRouter = GoRouter(
@@ -10,7 +10,7 @@ final GoRouter paGlobalRouter = GoRouter(
     GoRoute(
       path: '/main',
       name: BARoutes.nrMain,
-      builder: (context, state) => const ArticleContentScreen(),
+      builder: (context, state) => const MainScreen(),
     ),
     // GoRoute(
     //   path: '/auth',

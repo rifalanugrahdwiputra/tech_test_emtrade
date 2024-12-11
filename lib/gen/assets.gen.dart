@@ -12,33 +12,24 @@ import 'package:flutter/widgets.dart';
 class $AssetsFontsGen {
   const $AssetsFontsGen();
 
-  /// Directory path: assets/fonts/khula
-  $AssetsFontsKhulaGen get khula => const $AssetsFontsKhulaGen();
+  /// Directory path: assets/fonts/Inter
+  $AssetsFontsInterGen get inter => const $AssetsFontsInterGen();
 }
 
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/ic_account.svg
-  String get icAccount => 'assets/icons/ic_account.svg';
+  /// File path: assets/icons/ic_academy.svg
+  String get icAcademy => 'assets/icons/ic_academy.svg';
 
-  /// File path: assets/icons/ic_billing.svg
-  String get icBilling => 'assets/icons/ic_billing.svg';
+  /// File path: assets/icons/ic_analysis.svg
+  String get icAnalysis => 'assets/icons/ic_analysis.svg';
 
-  /// File path: assets/icons/ic_cart.svg
-  String get icCart => 'assets/icons/ic_cart.svg';
+  /// File path: assets/icons/ic_cancel.svg
+  String get icCancel => 'assets/icons/ic_cancel.svg';
 
-  /// File path: assets/icons/ic_cart_profile.svg
-  String get icCartProfile => 'assets/icons/ic_cart_profile.svg';
-
-  /// File path: assets/icons/ic_check.svg
-  String get icCheck => 'assets/icons/ic_check.svg';
-
-  /// File path: assets/icons/ic_close.svg
-  String get icClose => 'assets/icons/ic_close.svg';
-
-  /// File path: assets/icons/ic_edit_profile.svg
-  String get icEditProfile => 'assets/icons/ic_edit_profile.svg';
+  /// File path: assets/icons/ic_education.svg
+  String get icEducation => 'assets/icons/ic_education.svg';
 
   /// File path: assets/icons/ic_error_code_400.png
   AssetGenImage get icErrorCode400 =>
@@ -56,106 +47,40 @@ class $AssetsIconsGen {
   AssetGenImage get icErrorNoConnection =>
       const AssetGenImage('assets/icons/ic_error_no_connection.png');
 
-  /// File path: assets/icons/ic_error_upgrade_system.png
-  AssetGenImage get icErrorUpgradeSystem =>
-      const AssetGenImage('assets/icons/ic_error_upgrade_system.png');
-
-  /// File path: assets/icons/ic_favorite.svg
-  String get icFavorite => 'assets/icons/ic_favorite.svg';
+  /// File path: assets/icons/ic_filter.svg
+  String get icFilter => 'assets/icons/ic_filter.svg';
 
   /// File path: assets/icons/ic_home.svg
   String get icHome => 'assets/icons/ic_home.svg';
 
-  /// File path: assets/icons/ic_language.svg
-  String get icLanguage => 'assets/icons/ic_language.svg';
+  /// File path: assets/icons/ic_notfound.svg
+  String get icNotfound => 'assets/icons/ic_notfound.svg';
 
-  /// File path: assets/icons/ic_launcher_apps.png
-  AssetGenImage get icLauncherApps =>
-      const AssetGenImage('assets/icons/ic_launcher_apps.png');
+  /// File path: assets/icons/ic_play_video.svg
+  String get icPlayVideo => 'assets/icons/ic_play_video.svg';
 
-  /// File path: assets/icons/ic_location.svg
-  String get icLocation => 'assets/icons/ic_location.svg';
+  /// File path: assets/icons/ic_search_form.svg
+  String get icSearchForm => 'assets/icons/ic_search_form.svg';
 
-  /// File path: assets/icons/ic_logout.svg
-  String get icLogout => 'assets/icons/ic_logout.svg';
-
-  /// File path: assets/icons/ic_minus.svg
-  String get icMinus => 'assets/icons/ic_minus.svg';
-
-  /// File path: assets/icons/ic_notification.svg
-  String get icNotification => 'assets/icons/ic_notification.svg';
-
-  /// File path: assets/icons/ic_plus.svg
-  String get icPlus => 'assets/icons/ic_plus.svg';
-
-  /// File path: assets/icons/ic_plus_add.svg
-  String get icPlusAdd => 'assets/icons/ic_plus_add.svg';
-
-  /// File path: assets/icons/ic_product.svg
-  String get icProduct => 'assets/icons/ic_product.svg';
-
-  /// File path: assets/icons/ic_profile.svg
-  String get icProfile => 'assets/icons/ic_profile.svg';
-
-  /// File path: assets/icons/ic_search_.svg
-  String get icSearch => 'assets/icons/ic_search_.svg';
-
-  /// File path: assets/icons/ic_select_image.svg
-  String get icSelectImage => 'assets/icons/ic_select_image.svg';
-
-  /// File path: assets/icons/ic_select_images.png
-  AssetGenImage get icSelectImages =>
-      const AssetGenImage('assets/icons/ic_select_images.png');
-
-  /// File path: assets/icons/ic_size_l.svg
-  String get icSizeL => 'assets/icons/ic_size_l.svg';
-
-  /// File path: assets/icons/ic_size_m.svg
-  String get icSizeM => 'assets/icons/ic_size_m.svg';
-
-  /// File path: assets/icons/ic_size_s.svg
-  String get icSizeS => 'assets/icons/ic_size_s.svg';
-
-  /// File path: assets/icons/ic_size_xl.svg
-  String get icSizeXl => 'assets/icons/ic_size_xl.svg';
-
-  /// File path: assets/icons/ic_track_order.svg
-  String get icTrackOrder => 'assets/icons/ic_track_order.svg';
+  /// File path: assets/icons/ic_stock_pick.svg
+  String get icStockPick => 'assets/icons/ic_stock_pick.svg';
 
   /// List of all assets
   List<dynamic> get values => [
-        icAccount,
-        icBilling,
-        icCart,
-        icCartProfile,
-        icCheck,
-        icClose,
-        icEditProfile,
+        icAcademy,
+        icAnalysis,
+        icCancel,
+        icEducation,
         icErrorCode400,
         icErrorCode404,
         icErrorCode500,
         icErrorNoConnection,
-        icErrorUpgradeSystem,
-        icFavorite,
+        icFilter,
         icHome,
-        icLanguage,
-        icLauncherApps,
-        icLocation,
-        icLogout,
-        icMinus,
-        icNotification,
-        icPlus,
-        icPlusAdd,
-        icProduct,
-        icProfile,
-        icSearch,
-        icSelectImage,
-        icSelectImages,
-        icSizeL,
-        icSizeM,
-        icSizeS,
-        icSizeXl,
-        icTrackOrder
+        icNotfound,
+        icPlayVideo,
+        icSearchForm,
+        icStockPick
       ];
 }
 
@@ -190,6 +115,10 @@ class $AssetsImagesGen {
   AssetGenImage get imgInvertedTriangle =>
       const AssetGenImage('assets/images/img_inverted_triangle.png');
 
+  /// File path: assets/images/img_negative_case.png
+  AssetGenImage get imgNegativeCase =>
+      const AssetGenImage('assets/images/img_negative_case.png');
+
   /// File path: assets/images/img_primary_logo.png
   AssetGenImage get imgPrimaryLogo =>
       const AssetGenImage('assets/images/img_primary_logo.png');
@@ -223,6 +152,7 @@ class $AssetsImagesGen {
         imgDressSample,
         imgFormalSample,
         imgInvertedTriangle,
+        imgNegativeCase,
         imgPrimaryLogo,
         imgRectangle,
         imgSampleClasification,
@@ -232,27 +162,27 @@ class $AssetsImagesGen {
       ];
 }
 
-class $AssetsFontsKhulaGen {
-  const $AssetsFontsKhulaGen();
+class $AssetsFontsInterGen {
+  const $AssetsFontsInterGen();
 
-  /// File path: assets/fonts/khula/Khula-Bold.ttf
-  String get khulaBold => 'assets/fonts/khula/Khula-Bold.ttf';
+  /// File path: assets/fonts/Inter/Inter-Bold.ttf
+  String get interBold => 'assets/fonts/Inter/Inter-Bold.ttf';
 
-  /// File path: assets/fonts/khula/Khula-ExtraBold.ttf
-  String get khulaExtraBold => 'assets/fonts/khula/Khula-ExtraBold.ttf';
+  /// File path: assets/fonts/Inter/Inter-ExtraBold.ttf
+  String get interExtraBold => 'assets/fonts/Inter/Inter-ExtraBold.ttf';
 
-  /// File path: assets/fonts/khula/Khula-Light.ttf
-  String get khulaLight => 'assets/fonts/khula/Khula-Light.ttf';
+  /// File path: assets/fonts/Inter/Inter-Light.ttf
+  String get interLight => 'assets/fonts/Inter/Inter-Light.ttf';
 
-  /// File path: assets/fonts/khula/Khula-Regular.ttf
-  String get khulaRegular => 'assets/fonts/khula/Khula-Regular.ttf';
+  /// File path: assets/fonts/Inter/Inter-Regular.ttf
+  String get interRegular => 'assets/fonts/Inter/Inter-Regular.ttf';
 
-  /// File path: assets/fonts/khula/Khula-SemiBold.ttf
-  String get khulaSemiBold => 'assets/fonts/khula/Khula-SemiBold.ttf';
+  /// File path: assets/fonts/Inter/Inter-SemiBold.ttf
+  String get interSemiBold => 'assets/fonts/Inter/Inter-SemiBold.ttf';
 
   /// List of all assets
   List<String> get values =>
-      [khulaBold, khulaExtraBold, khulaLight, khulaRegular, khulaSemiBold];
+      [interBold, interExtraBold, interLight, interRegular, interSemiBold];
 }
 
 class Assets {

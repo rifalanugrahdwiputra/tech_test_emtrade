@@ -62,19 +62,19 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/fonts/
-    - assets/fonts/khula/
+    - assets/fonts/Inter/
 
   # for setup font on apps
   fonts:
-    - family: Khula
+    - family: Inter
       fonts:
-        - asset: assets/fonts/khula/Khula-Bold.ttf
+        - asset: assets/fonts/Inter/Inter-Bold.ttf
           weight: 700
-        - asset: assets/fonts/khula/Khula-ExtraBold.ttf
+        - asset: assets/fonts/Inter/Inter-ExtraBold.ttf
           weight: 800
-        - asset: assets/fonts/khula/Khula-Light.ttf
+        - asset: assets/fonts/Inter/Inter-Light.ttf
           weight: 300
-        - asset: assets/fonts/khula/Khula-Regular.ttf
+        - asset: assets/fonts/Inter/Inter-Regular.ttf
           weight: 400
-        - asset: assets/fonts/khula/Khula-SemiBold.ttf
+        - asset: assets/fonts/Inter/Inter-SemiBold.ttf
           weight: 600

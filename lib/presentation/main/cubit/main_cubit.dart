@@ -3,7 +3,7 @@ import 'package:injectable/injectable.dart';
 
 @injectable
 class MainCubit extends Cubit<int> {
-  MainCubit() : super(0);
+  MainCubit() : super(2);
 
   void changeTabIndex(int newIndex) {
     emit(newIndex);

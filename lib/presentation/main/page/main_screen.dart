@@ -3,6 +3,7 @@ import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
 import 'package:emtrade_tech_test/design_system/main/organism/bottom_nav_bar_organism.dart';
 import 'package:emtrade_tech_test/presentation/article_content/page/article_content_screen.dart';
 import 'package:emtrade_tech_test/presentation/main/cubit/main_cubit.dart';
+import 'package:emtrade_tech_test/presentation/main/page/negative_case/maintanence_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -42,10 +43,11 @@ class _MainPageState extends State<MainPage> with WidgetsBindingObserver {
 
   List<Widget> _buildRoutes() {
     return [
-      const ArticleContentPage(),
-      const ArticleContentPage(),
-      const ArticleContentPage(),
-      const ArticleContentPage(),
+      const MaintanenceScreen(),
+      const MaintanenceScreen(),
+      const ArticleContentScreen(),
+      const MaintanenceScreen(),
+      const MaintanenceScreen(),
     ];
   }
 

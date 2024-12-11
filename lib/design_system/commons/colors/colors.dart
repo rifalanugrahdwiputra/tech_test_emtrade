@@ -2,6 +2,23 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // new
+  
+  static const thirdGreen = Color(0xff04A9AC);
+
+  static const neutralButtonBG = Color(0xffF5F5F5);
+  
+  static const neutralLabel = Color(0xff979797);
+  
+  static const neutralCaption = Color(0xff707070);
+
+  static const neutralTitle = Color(0xff333333);
+  
+  static const neutralButtonBorder = Color(0xffEEEEEE);
+
+  static const neutralBody = Color(0xff515151);
+
+  static const secondaryOrange = Color(0xffFF9441);
+
   static const primary = Color(0xffD8A4AF);
 
   static const darkPrimary = Color(0xff592736);
@@ -142,8 +159,6 @@ class AppColors {
   static const secondaryPurple = Color(0xff4e2977);
 
   static const secondaryMagenta = Color(0xffdf416b);
-
-  static const secondaryOrange = Color(0xffd75853);
 
   static const secondaryYellow = Color(0xfffda22b);
 

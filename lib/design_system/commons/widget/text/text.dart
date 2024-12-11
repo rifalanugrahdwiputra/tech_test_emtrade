@@ -193,6 +193,46 @@ class BAText extends StatelessWidget {
     required this.textColor,
   });
 
+  const BAText.titleExtraMediumBold({
+    super.key,
+    required this.text,
+    this.textStyle = AppTextStyles.titleExtraMediumBold,
+    this.textAlign,
+    this.textOverflow,
+    this.maxLines,
+    required this.textColor,
+  });
+
+  const BAText.titleExtraMediumSemiBold({
+    super.key,
+    required this.text,
+    this.textStyle = AppTextStyles.titleExtraMediumSemiBold,
+    this.textAlign,
+    this.textOverflow,
+    this.maxLines,
+    required this.textColor,
+  });
+
+  const BAText.titleExtraMediumMedium({
+    super.key,
+    required this.text,
+    this.textStyle = AppTextStyles.titleExtraMediumMedium,
+    this.textAlign,
+    this.textOverflow,
+    this.maxLines,
+    required this.textColor,
+  });
+
+  const BAText.titleExtraMediumRegular({
+    super.key,
+    required this.text,
+    this.textStyle = AppTextStyles.titleExtraMediumRegular,
+    this.textAlign,
+    this.textOverflow,
+    this.maxLines,
+    required this.textColor,
+  });
+
   const BAText.titleMediumBold({
     super.key,
     required this.text,

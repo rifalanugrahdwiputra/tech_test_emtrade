@@ -75,6 +75,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                     child: child!,
                   );
                 },
+                theme: ThemeData(
+                  useMaterial3: false,
+                ),
                 debugShowCheckedModeBanner: false,
                 routerDelegate: paGlobalRouter.routerDelegate,
                 routeInformationParser: paGlobalRouter.routeInformationParser,

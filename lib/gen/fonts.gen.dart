@@ -10,6 +10,6 @@
 class FontFamily {
   FontFamily._();
 
-  /// Font family: Khula
-  static const String khula = 'Khula';
+  /// Font family: Inter
+  static const String inter = 'Inter';
 }

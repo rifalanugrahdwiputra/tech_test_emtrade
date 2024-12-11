@@ -31,6 +31,7 @@ class BAForms extends StatefulWidget {
   final FocusNode? focusNode;
   final VoidCallback? onFinishEditing; // New parameter
   final String? errorText;
+  final bool filled;
 
   const BAForms.phone({
     super.key,
@@ -59,7 +60,8 @@ class BAForms extends StatefulWidget {
         obscureText = false,
         maxLines = 1,
         minLines = 1,
-        textInputType = TextInputType.phone;
+        textInputType = TextInputType.phone,
+        filled = false;
 
   const BAForms.email({
     super.key,
@@ -88,7 +90,8 @@ class BAForms extends StatefulWidget {
         obscureText = false,
         maxLines = 1,
         minLines = 1,
-        textInputType = TextInputType.emailAddress;
+        textInputType = TextInputType.emailAddress,
+        filled = false;
 
   const BAForms.password({
     super.key,
@@ -117,7 +120,8 @@ class BAForms extends StatefulWidget {
         maxLines = 1,
         minLines = 1,
         obscureText = true,
-        textInputType = TextInputType.visiblePassword;
+        textInputType = TextInputType.visiblePassword,
+        filled = false;
 
   const BAForms.text({
     super.key,
@@ -142,6 +146,7 @@ class BAForms extends StatefulWidget {
     this.focusNode,
     this.onFinishEditing, // New parameter
     this.errorText,
+    this.filled = false,
   })  : textFormType = TextFormType.text,
         obscureText = false,
         maxLines = 1,
@@ -173,6 +178,7 @@ class BAForms extends StatefulWidget {
     this.focusNode,
     this.onFinishEditing, // New parameter
     this.errorText,
+    this.filled = false,
   })  : textFormType = TextFormType.textArea,
         obscureText = false,
         textInputType = TextInputType.multiline;
@@ -200,6 +206,7 @@ class BAForms extends StatefulWidget {
     this.focusNode,
     this.onFinishEditing, // New parameter
     this.errorText,
+    this.filled = false,
   })  : textFormType = TextFormType.number,
         obscureText = false,
         maxLines = 1,
@@ -229,6 +236,7 @@ class BAForms extends StatefulWidget {
     this.focusNode,
     this.onFinishEditing, // New parameter
     this.errorText,
+    this.filled = false,
   })  : textFormType = TextFormType.number,
         obscureText = false,
         maxLines = 1,
@@ -258,6 +266,7 @@ class BAForms extends StatefulWidget {
     this.focusNode,
     this.onFinishEditing, // New parameter
     this.errorText,
+    this.filled = false,
   })  : textFormType = TextFormType.alphabetic,
         obscureText = false,
         maxLines = 1,
@@ -308,26 +317,37 @@ class _BAFormsState extends State<BAForms> {
       onSaved: widget.onSaved,
       textAlign: widget.textAlign,
       cursorColor: AppColors.darkPrimary,
+      
       decoration: InputDecoration(
-        focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-            color: AppColors.darkPrimary,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0,),
+        filled: widget.filled,
+        fillColor: AppColors.neutralButtonBG,
+        enabledBorder: widget.filled ? UnderlineInputBorder(
+          borderRadius: BorderRadius.circular(30.0),
+          borderSide: const BorderSide(
+            color: AppColors.neutralButtonBG,
           ),
-        ),
+        ) : InputBorder.none,
+        focusedBorder: widget.filled ? UnderlineInputBorder(
+          borderRadius: BorderRadius.circular(30.0),
+          borderSide: const BorderSide(
+            color: AppColors.neutralButtonBG,
+          ),
+        ) : InputBorder.none,
         hintText: widget.placeholder,
         hintStyle: widget.hintStyle ??
             AppTextStyles.titleMediumRegular
-                .copyWith(color: AppColors.darkPrimary),
+                .copyWith(color: const Color(0xff979797)),
         prefixIcon: widget.prefixIcon != null
             ? Padding(
-                padding: const EdgeInsets.only(top: 10, right: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0,),
                 child: widget.prefixIcon,
               )
             : null,
         prefixIconConstraints: const BoxConstraints(minWidth: 0, minHeight: 0),
         suffixIcon: widget.suffixIcon != null
             ? Padding(
-                padding: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0,),
                 child: widget.suffixIcon,
               )
             : null,

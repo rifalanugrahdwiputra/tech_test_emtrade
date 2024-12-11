@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 
 class AppTextStyles {
   static const displayLargeSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 64,
@@ -12,7 +12,7 @@ class AppTextStyles {
   );
 
   static const headlineLargeBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 32,
@@ -21,7 +21,7 @@ class AppTextStyles {
   );
 
   static const headlineLargeSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 32,
@@ -30,7 +30,7 @@ class AppTextStyles {
   );
 
   static const headlineLargeMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 32,
@@ -39,7 +39,7 @@ class AppTextStyles {
   );
 
   static const headlineLargeRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 32,
@@ -48,7 +48,7 @@ class AppTextStyles {
   );
 
   static const headlineMediumBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 30,
@@ -57,7 +57,7 @@ class AppTextStyles {
   );
 
   static const headlineMediumSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 30,
@@ -66,7 +66,7 @@ class AppTextStyles {
   );
 
   static const headlineMediumMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 30,
@@ -75,7 +75,7 @@ class AppTextStyles {
   );
 
   static const headlineMediumRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 30,
@@ -84,7 +84,7 @@ class AppTextStyles {
   );
 
   static const headlineSmallBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 24,
@@ -93,7 +93,7 @@ class AppTextStyles {
   );
 
   static const headlineSmallSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 24,
@@ -102,7 +102,7 @@ class AppTextStyles {
   );
 
   static const headlineSmallMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 24,
@@ -111,7 +111,7 @@ class AppTextStyles {
   );
 
   static const headlineSmallRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 24,
@@ -120,7 +120,7 @@ class AppTextStyles {
   );
 
   static const headlineExtraSmallBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 22,
@@ -129,7 +129,7 @@ class AppTextStyles {
   );
 
   static const headlineExtraSmallSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 22,
@@ -138,7 +138,7 @@ class AppTextStyles {
   );
 
   static const headlineExtraSmallMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 22,
@@ -147,7 +147,7 @@ class AppTextStyles {
   );
 
   static const headlineExtraSmallRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 22,
@@ -156,7 +156,7 @@ class AppTextStyles {
   );
 
   static const titleLargeBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 20,
@@ -165,7 +165,7 @@ class AppTextStyles {
   );
 
   static const titleLargeSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 20,
@@ -174,7 +174,7 @@ class AppTextStyles {
   );
 
   static const titleLargeMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 20,
@@ -183,7 +183,7 @@ class AppTextStyles {
   );
 
   static const titleLargeRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 20,
@@ -191,8 +191,44 @@ class AppTextStyles {
     letterSpacing: 0.4,
   );
 
+  static const titleExtraMediumBold = TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.normal,
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    letterSpacing: 0.4,
+  );
+
+  static const titleExtraMediumSemiBold = TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w600,
+    fontStyle: FontStyle.normal,
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    letterSpacing: 0.4,
+  );
+
+  static const titleExtraMediumMedium = TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w500,
+    fontStyle: FontStyle.normal,
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    letterSpacing: 0.4,
+  );
+
+  static const titleExtraMediumRegular = TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontStyle: FontStyle.normal,
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    letterSpacing: 0.4,
+  );
+
   static const titleMediumBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 16,
@@ -201,7 +237,7 @@ class AppTextStyles {
   );
 
   static const titleMediumSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 16,
@@ -210,7 +246,7 @@ class AppTextStyles {
   );
 
   static const titleMediumMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 16,
@@ -219,7 +255,7 @@ class AppTextStyles {
   );
 
   static const titleMediumRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 16,
@@ -228,7 +264,7 @@ class AppTextStyles {
   );
 
   static const bodyMediumBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 14,
@@ -237,7 +273,7 @@ class AppTextStyles {
   );
 
   static const bodyMediumSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 14,
@@ -246,7 +282,7 @@ class AppTextStyles {
   );
 
   static const bodyMediumMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 14,
@@ -255,7 +291,7 @@ class AppTextStyles {
   );
 
   static const bodyMediumRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 14,
@@ -264,7 +300,7 @@ class AppTextStyles {
   );
 
   static const bodySmallBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 12,
@@ -273,7 +309,7 @@ class AppTextStyles {
   );
 
   static const bodySmallSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 12,
@@ -282,7 +318,7 @@ class AppTextStyles {
   );
 
   static const bodySmallMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 12,
@@ -291,7 +327,7 @@ class AppTextStyles {
   );
 
   static const bodySmallRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 12,
@@ -300,7 +336,7 @@ class AppTextStyles {
   );
 
   static const bodyExtraSmallBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 10,
@@ -309,7 +345,7 @@ class AppTextStyles {
   );
 
   static const bodyExtraSmallSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 10,
@@ -318,7 +354,7 @@ class AppTextStyles {
   );
 
   static const bodyExtraSmallMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 10,
@@ -327,7 +363,7 @@ class AppTextStyles {
   );
 
   static const bodyExtraSmallRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 10,
@@ -336,7 +372,7 @@ class AppTextStyles {
   );
 
   static const captionBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.normal,
     fontSize: 8,
@@ -345,7 +381,7 @@ class AppTextStyles {
   );
 
   static const captionSemiBold = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.normal,
     fontSize: 8,
@@ -354,7 +390,7 @@ class AppTextStyles {
   );
 
   static const captionMedium = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.normal,
     fontSize: 8,
@@ -363,7 +399,7 @@ class AppTextStyles {
   );
 
   static const captionRegular = TextStyle(
-    fontFamily: "Khula",
+    fontFamily: "Inter",
     fontWeight: FontWeight.w400,
     fontStyle: FontStyle.normal,
     fontSize: 8,
