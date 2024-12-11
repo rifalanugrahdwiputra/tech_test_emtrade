@@ -10,7 +10,7 @@ Before running the app, ensure you have the following installed:
 - **Dart SDK**: Version 3.5.3 (stable)
 - **An IDE**: Android Studio, VS Code, or IntelliJ IDEA
 
-Ensure that your environment configuration (e.g., `.env` files, API keys) is set up correctly before running the app.
+Ensure that your environment configuration (e.g., `config/.dev.env` files, API keys) is set up correctly before running the app.
 
 ## Steps to Run the App
 
