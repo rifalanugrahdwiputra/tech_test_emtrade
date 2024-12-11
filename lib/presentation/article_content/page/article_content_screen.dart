@@ -1,5 +1,6 @@
 import 'package:emtrade_tech_test/common/injection/injection.dart';
 import 'package:emtrade_tech_test/design_system/article_content/organism/card_content_organism.dart';
+import 'package:emtrade_tech_test/design_system/article_content/organism/filter/category_select_filter_organism.dart';
 import 'package:emtrade_tech_test/design_system/article_content/organism/negative_case/notfound_organism.dart';
 import 'package:emtrade_tech_test/design_system/commons/widget/shimmer/shimmer.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,7 @@ class _ArticleContentPageState extends State<ArticleContentPage> {
     final cubit = context.read<ArticleContentCubit>();
     return Scaffold(
       backgroundColor: AppColors.white,
-      appBar: AppbarOrganism(onClickFilter: () {}),
+      appBar: AppbarOrganism(onClickFilter: () => _showFilterModal(context)),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
         child: Column(
@@ -124,6 +125,36 @@ class _ArticleContentPageState extends State<ArticleContentPage> {
           ],
         ),
       ),
+    );
+  }
+
+  void _showFilterModal(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) {
+        return Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              margin: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 32.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: CategorySelectFilterOrganism(
+                  onClickReset: () {},
+                  cancelOnPressed: () {},
+                  saveOnPressed: () {},
+                ),
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }

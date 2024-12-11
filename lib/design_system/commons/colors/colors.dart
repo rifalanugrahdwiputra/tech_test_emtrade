@@ -18,6 +18,8 @@ class AppColors {
   static const neutralBody = Color(0xff515151);
 
   static const secondaryOrange = Color(0xffFF9441);
+  
+  static const secondaryOrangeBG = Color(0xffFFF4EC);
 
   static const primary = Color(0xffD8A4AF);
 
