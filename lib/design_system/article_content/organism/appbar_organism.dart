@@ -5,8 +5,9 @@ import 'package:flutter/material.dart';
 
 class AppbarOrganism extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onClickFilter;
+  final bool isUsedFilter;
 
-  const AppbarOrganism({super.key, required this.onClickFilter});
+  const AppbarOrganism({super.key, required this.onClickFilter, required this.isUsedFilter});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +20,10 @@ class AppbarOrganism extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: false,
       actions: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 9.0),
           child: IconFilterAppbarMoleculs(
-            onClickFilter: () => onClickFilter(),
+            onClickFilter: () => onClickFilter(), 
+            isUsedFilter: isUsedFilter,
           ),
         ),
       ],

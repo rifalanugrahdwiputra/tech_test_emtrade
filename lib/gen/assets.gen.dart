@@ -65,6 +65,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_stock_pick.svg
   String get icStockPick => 'assets/icons/ic_stock_pick.svg';
 
+  /// File path: assets/icons/ic_used_filter.svg
+  String get icUsedFilter => 'assets/icons/ic_used_filter.svg';
+
   /// List of all assets
   List<dynamic> get values => [
         icAcademy,
@@ -80,7 +83,8 @@ class $AssetsIconsGen {
         icNotfound,
         icPlayVideo,
         icSearchForm,
-        icStockPick
+        icStockPick,
+        icUsedFilter
       ];
 }
 

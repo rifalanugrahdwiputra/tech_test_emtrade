@@ -4,33 +4,38 @@ import 'package:flutter/material.dart';
 
 class SelectorCategoryMolecules extends StatelessWidget {
   final String categoryName;
-  const SelectorCategoryMolecules({super.key, required this.categoryName});
+  final bool isSelected;
+  final VoidCallback onTap;
+  const SelectorCategoryMolecules({super.key, required this.categoryName, required this.isSelected, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
-          decoration: BoxDecoration(
-            color: Colors.transparent.withOpacity(0),
-            borderRadius: const BorderRadius.all(Radius.circular(100.0)),
-            border: Border.all(
-              color: AppColors.neutralButtonBorder,
-              width: 1.0,
+    return GestureDetector(
+      onTap: onTap,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+            decoration: BoxDecoration(
+              color: Colors.transparent.withOpacity(0),
+              borderRadius: const BorderRadius.all(Radius.circular(100.0)),
+              border: Border.all(
+                color: isSelected ? AppColors.secondaryOrange : AppColors.neutralButtonBorder,
+                width: 1.0,
+              ),
+            ),
+            child: Center(
+              child: BAText.titleMediumRegular(
+                text: categoryName,
+                textColor: isSelected ? AppColors.secondaryOrange : AppColors.neutralTitle,
+              ),
             ),
           ),
-          child: Center(
-            child: BAText.titleMediumRegular(
-              text: categoryName,
-              textColor: AppColors.neutralTitle,
-            ),
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

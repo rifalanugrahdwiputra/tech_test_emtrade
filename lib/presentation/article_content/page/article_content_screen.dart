@@ -60,7 +60,22 @@ class _ArticleContentPageState extends State<ArticleContentPage> {
     final cubit = context.read<ArticleContentCubit>();
     return Scaffold(
       backgroundColor: AppColors.white,
-      appBar: AppbarOrganism(onClickFilter: () => _showFilterModal(context)),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(kToolbarHeight),
+        child: BlocBuilder<ArticleContentCubit, ArticleContentState>(
+          bloc: cubit,
+          builder: (context, state) {
+            final isUsedFilter = state is ArticleContentLoaded &&
+                state.selectedCategories != null &&
+                state.selectedCategories!.isNotEmpty;
+
+            return AppbarOrganism(
+              onClickFilter: () => _showFilterModal(context, context.read<ArticleContentCubit>()),
+              isUsedFilter: isUsedFilter,
+            );
+          },
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
         child: Column(
@@ -128,31 +143,52 @@ class _ArticleContentPageState extends State<ArticleContentPage> {
     );
   }
 
-  void _showFilterModal(BuildContext context) {
+  void _showFilterModal(BuildContext context, ArticleContentCubit cubit) {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (context) {
-        return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              margin: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 32.0),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(16.0),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: CategorySelectFilterOrganism(
-                  onClickReset: () {},
-                  cancelOnPressed: () {},
-                  saveOnPressed: () {},
+        return BlocBuilder<ArticleContentCubit, ArticleContentState>(
+          bloc: cubit,
+          builder: (contexts, state) {
+            if (state is! ArticleContentLoaded) {
+              return Container();
+            }
+            final listCategories = state.categoriesData ?? [];
+            final selectedCategories = state.selectedCategories ?? [];
+            return Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 32.0),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16.0),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: CategorySelectFilterOrganism(
+                      onClickReset: () {
+                        cubit.resetSelectedCategories();
+                      },
+                      cancelOnPressed: () {
+                        Navigator.pop(contexts);
+                      },
+                      saveOnPressed: () {
+                        cubit.savedFilteredByCategories(contexts);
+                      },
+                      listCategories: listCategories,
+                      selectedCategories: selectedCategories,
+                      onSelectedCategories: (categories) {
+                        cubit.updateSelectedCategories(categories);
+                      },
+                    ),
+                  ),
                 ),
-              ),
-            ),
-          ],
+              ],
+            );
+          },
         );
       },
     );

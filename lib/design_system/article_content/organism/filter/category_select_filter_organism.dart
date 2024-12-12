@@ -5,18 +5,20 @@ import 'package:emtrade_tech_test/design_system/article_content/moleculs/filter/
 import 'package:emtrade_tech_test/design_system/article_content/moleculs/filter/title_category_moleculs.dart';
 import 'package:emtrade_tech_test/design_system/article_content/moleculs/filter/title_filter_moleculs.dart';
 import 'package:emtrade_tech_test/design_system/commons/colors/colors.dart';
+import 'package:emtrade_tech_test/domain/article_content/data/categories_data.dart';
 import 'package:flutter/material.dart';
 
 class CategorySelectFilterOrganism extends StatelessWidget {
   final VoidCallback onClickReset;
   final VoidCallback cancelOnPressed;
   final VoidCallback saveOnPressed;
-  const CategorySelectFilterOrganism({super.key, required this.onClickReset, required this.cancelOnPressed, required this.saveOnPressed});
+  final List<CategoriesData> listCategories;
+  final List<CategoriesData> selectedCategories;
+  final Function(CategoriesData) onSelectedCategories;
+  const CategorySelectFilterOrganism({super.key, required this.onClickReset, required this.cancelOnPressed, required this.saveOnPressed, required this.listCategories, required this.selectedCategories, required this.onSelectedCategories,});
 
   @override
   Widget build(BuildContext context) {
-    final categories = ['pemula', 'insight', 'perencanaan-keuangan'];
-
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -47,8 +49,17 @@ class CategorySelectFilterOrganism extends StatelessWidget {
           Wrap(
             spacing: 8.0,
             runSpacing: 8.0,
-            children: categories
-              .map((category) => SelectorCategoryMolecules(categoryName: category))
+            children: listCategories
+              .map((category) {
+                final isSelected = selectedCategories.contains(category);
+                return SelectorCategoryMolecules(
+                  categoryName: category.name,
+                  isSelected: isSelected,
+                  onTap: () {
+                    onSelectedCategories(category);
+                  },
+                );
+              })
               .toList(),
           ),
           const SizedBox(height: 16.0),
@@ -67,7 +78,11 @@ class CategorySelectFilterOrganism extends StatelessWidget {
               ),
               const SizedBox(width: 16.0),
               Expanded(
-                child: SaveButtonFilterMoleculs(saveOnPressed: saveOnPressed),
+                child: SaveButtonFilterMoleculs(
+                  saveOnPressed: () {
+                    saveOnPressed();
+                  },
+                ),
               ),
             ],
           ),
